@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://durga:durga123@cluster0.yqk3r.mongodb.net/InterviewTrackerData?retryWrites=true&w=majority';
+const mongoURI = '';
 
 const InitiateMongoServer = async()=>{
     try{
