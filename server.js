@@ -15,11 +15,11 @@ app.set('view engine', 'ejs');
 app.use(cookieParser());
 app.use(authRoutes);
 
-// const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 
 InitiateMongoServer()
     .then(() => {
-        app.listen(4000, (req, res) => {
+        app.listen(PORT, (req, res) => {
             console.log('server is started');
             console.log('Ready!!');
         });
