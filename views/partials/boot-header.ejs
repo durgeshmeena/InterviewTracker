@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Interview-Tracker | Coding Club IITG |</title>
+    <meta name="description" content="interview tracker and interview experiences ">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="/css/smoothproducts.css">
+    <link rel="stylesheet" href="/css/stl5.css">
+    <link rel="stylesheet" href="/css/Team-Boxed.css">
+    <link rel="stylesheet" href="/css/Testimonials.css">
+
+  
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/login2/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/login2/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/login2/css/main.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="/style3.css">
+    <link rel="stylesheet" href="/uploading.css">
+
+    <link rel="icon" type="image/png" href="https://www.iitg.ac.in/upload/favicon.ico" />
+
+</head>
+
+<body>
+        <nav class="navbar navbar-light navbar-expand-lg  bg-white clean-navbar">
+            <div class="container"><a class="navbar-brand border rounded-0 border-light logo"
+                    href="/">Interview-Tracker</a><button data-toggle="collapse" class="navbar-toggler"
+                    data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/index">Programming</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/interview">Experiences</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/service-page"></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" ></a></li>
+                                <% if (locals.user){ %>
+                                    <!-- <li class="welcome"><span class="abtn" id="role"><%= locals.role%></span><%= locals.user.name %></li> -->
+                                    <!-- <li><a href="/logout" class="btn">Log Out</a></li> -->
+                        <li class="welcome nav-item" role="presentation"><span class="abtn nav-link" id="role"> <%= locals.role%> </span><%= locals.user.name %></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/logout">Log Out</a></li>
+
+                                    <% }else{ %>
+                                                <li class="nav-item" role="presentation"><a class="nav-link" href="/login">Login</a></li>
+                                                <li class="nav-item" role="presentation"><a class="nav-link" href="/signup">Signup</a></li>
+                                        <% } %>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+            <script>
+                const role = document.getElementById("role");
+                // console.log();
+                if (role) {
+                    if (role.innerText == "ADMIN") {
+                        document.getElementById("role").classList.replace('abtn', 'bbtn');
+                        document.getElementById("role").outerHTML = document.getElementById("role").outerHTML.replace(/span/g, "a");
+                        document.getElementById("role").setAttribute('href', "/admin");
+                    }
+                }
+
+            </script>
