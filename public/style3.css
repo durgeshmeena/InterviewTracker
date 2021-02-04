@@ -1,21 +1,55 @@
 .l-1{
-  /* width: 60%;  */
-  margin:50px auto 100px ;
+  width:   85%;
+  margin:6% auto 10% ;
   background-color: white;
   border-radius: 20px;
 }
 
+/* .partners__companies{
+    width:   83%;
+} */
 
 .partners__companies {
-  width: 1060px;
-  height: 400px;
+       /*1060px;*/
+  /* height: 400px; */
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 50px;
+  /* padding: 5%px 6%; */
 }
 
+.partners__companies a{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-right: 8%;
+    width: 25%;
+}
+
+@media (max-width: 767px) {
+  .partners__companies a {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 47%;
+     margin:auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .partners__companies a {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 56%;
+     margin:auto;
+  }
+
+  .l-1{
+      width: 70%;
+  }
+
+}
+
+
 .partners__companies-icon {
-    margin: 1rem 2rem;
+    margin: 1rem auto;
     -webkit-transition: -webkit-transform 0.8s;
     transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
@@ -50,7 +84,7 @@
 
 .google {
     height: 72px;
-    width: 137px;
+    width: 141px;
     background-position: -2417px;
   
 }
@@ -58,7 +92,7 @@
 
 .amazon {
     height: 72px;
-    width: 135px;
+    width: 141px;
     background-position: -5514px;
 }
 .microsoft{
@@ -84,12 +118,13 @@
 }
 .uber {
     height: 72px;
-    width: 103px;
+    width: 109px;
     background-position: -4956px;
 }
 .ola {
     height: 72px;
-    width: 116px;
+    width: 123px;
+    
     background-position: -3586px;
 }
 
@@ -100,10 +135,18 @@
     position: absolute;
     top: 15%;
     left: 30%;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
     
 }
 
-
+@media (max-width: 650px) {
+  #cpm_title{
+      top: 10%;
+      font-weight:100;
+      font-size: 1.5rem;
+  }
+}
 
 .testimonial_parent{
     /* display: flex; */

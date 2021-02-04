@@ -22,7 +22,7 @@ router.post('/addq',authController.addq_post);
 
 router.get('/interview',(req,res)=>{res.render('interview-boots')});
 router.post('/interview', expController.interview_post);
-
+// router.get('/service-page',(req,res)=>{ res.redirect(301,'/'); })
 router.get('/interview/:company', expController.experience_get);
 router.post('/interview/add-exp', expController.upload.single('image'), expController.experience_post); //,expController.upload.single('image')
 module.exports = router;

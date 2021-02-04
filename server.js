@@ -31,4 +31,5 @@ InitiateMongoServer()
 
 app.get('*', checkUser);
 app.get('/', expController.home_get );
+app.get('/robotics',(req,res)=>{res.render('others')});
 

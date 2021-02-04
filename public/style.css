@@ -140,7 +140,7 @@ label{
 }
 
 button{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   border-radius: 36px;
   background: #FEE996;
   border:0;
@@ -175,14 +175,14 @@ header h3{
   margin-left: 2px;
   color: #999;
 }
-header .btn{
+/* header .btn{
   margin-top: 20px;
   padding: 12px 18px;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
   font-size: 0.8em;
-}
+} */
 
 /* footer{
   text-align: center;
@@ -195,7 +195,7 @@ header .btn{
   text-align: center;
 }
 
-.Que{
+/* .Que{
   padding-left: 45%;
    margin-top: 80px;
    
@@ -300,7 +300,7 @@ header .btn{
 .question2 a{
   color: rgba(36, 46, 42, 0.986);
   font-weight: bolder;
-}
+} */
 
 /* .main-box{
   padding: 30px 30px 30px 30px;
@@ -311,8 +311,12 @@ header .btn{
 
 } */
 
-.program-background{
-  /* position: absolute;
-  top: ; */
+/* .program-background{
+  position: absolute;
+  top: ;
 
-}
+} */
+
+/* .navbar-toggler{
+
+} */
