@@ -56,7 +56,7 @@
         <nav class="navbar navbar-light navbar-expand-lg  bg-white clean-navbar">
             <div class="container">
                 <a class="navbar-brand  rounded-0  logo" href="/" style="font-weight: 500;">Interview-Tracker</a>
-                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: yellow;">
+                <button data-toggle="collapse" class="navbar-toggler" onclick=companyPosition(); data-target="#navcol-1" style="background-color: yellow;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -98,5 +98,69 @@
                     </ul>
                 </div>
             </div>
+
+            <script>
+                    let url = window.location.pathname;
+                    const nameValue = url.split('/')[2];
+                    const nameVal1 = url.split('/')[1];
+
+                    console.log(1, 'reached');
+                    const companyPosition = function () {
+                        // console.log(nameValue)
+                        if (nameValue) {
+                            // console.log(2, 'worked');
+                            var x = document.getElementById('cpm_title');
+                            if(x){
+                                if (x.style.position == "relative") {
+                                    console.log('relative to absolute')
+                                    x.style.position = "absolute";
+                                }
+                                else {
+                                    console.log('absolute to relative')
+                                    x.style.position = "relative";
+                                }
+                            }
+
+
+                        }
+                        if(nameVal1=="interview"){
+                            var y = document.getElementById("addQpos");
+                            if (y.style.position == "relative") {
+                                // console.log('relative to absolute')
+                                y.style.position = "absolute";
+                            }
+                            else {
+                                console.log('absolute to relative')
+                                // y.style.position = "relative";
+                            }
+                        }
+                        if (nameVal1=="index") {
+                            var z = document.getElementsByClassName("addqpos")[0];
+                            if (z.style.display == "none") {
+                                console.log('show')
+                                z.style.display = "block";
+                            }
+                            else {
+                                console.log('hide')
+                                z.style.display = "none";
+                            }
+
+                            var s = document.getElementsByClassName("back-index")[0];
+                            if(s){
+                                if (s.style.display == "none") {
+                                    console.log('show')
+                                    s.style.display = "block";
+                                }
+                                else {
+                                    console.log('hide')
+                                    s.style.display = "none";
+                                }
+                            }
+                        }
+                        
+
+                    }
+            </script>
+
         </nav>
 

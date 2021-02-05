@@ -239,7 +239,7 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 @media (max-width: 580px) {
   .addQ_{
     position: fixed;
-    top: 24%;
+    top: 23%;
     left: 68%;   
   }
   .btnSize{

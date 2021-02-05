@@ -240,7 +240,7 @@
 
 /* ################################################################# */
 
-#cpm_title{
+.companyPosition{
     position: absolute;
     top: 15%;
     left: 30%;
@@ -250,7 +250,7 @@
 }
 
 @media (max-width: 650px) {
-  #cpm_title{
+  .companyPosition{
       top: 15%;
       left: 20%;
       /* font-weight:100; */
@@ -258,19 +258,19 @@
   }
 }
 @media (max-width: 580px) {
-  #cpm_title{
+  .companyPosition{
       top: 15%;
-      left: 10%;
+      left: 20%;
       /* font-weight:100; */
       font-size: 1.7rem;
   }
 }
 
 @media (max-width: 387px) {
-  #cpm_title{
-      left: 8%;
+  .companyPosition{
+      left: 22%;
       top: 15%;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
   }
 }
 

@@ -10,7 +10,7 @@
         <div id="changeFocus" style="height: 100%;"></div>
         <%- include('partials/popupExperience') %>
 
-            <h1 class="middle" id="cpm_title" ><span id="c_name">Company </span> Interview Experiences</h1>
+            <h1 class="middle companyPosition" id="cpm_title" style="position: absolute;"><span id="c_name3">Company</span> Interviews</h1>
             <div class="testl_parent ">
 
                 <div class="container" style="padding-bottom: 10%;">
@@ -58,10 +58,16 @@
 
     <script>
 
-        let company = document.getElementById("c_name");
-        let url = window.location.pathname;
-        const nameValue = url.split('/')[2];
-        company.innerText = nameValue.charAt(0).toUpperCase() + nameValue.slice(1);
+        let company3 = document.getElementById("c_name3");
+        let url3 = window.location.pathname;
+        const nameValue3 = url3.split('/')[2];
+        company3.innerText = nameValue3.charAt(0).toUpperCase() + nameValue3.slice(1);
+
+        
+       
+        
+
+
 
         // let cmp = document.querySelectorAll("div span.company");
         // console.log(cmp);
